@@ -4,6 +4,7 @@
 (define (halve x) (/ x 2))
 (define (double x) (* x 2))
 
+; recursive multiply with O(log(b)) time complexity
 (define (mult a b)
   (cond ((= b 0) 0)
         ((even? b) (double (mult a (halve b))))

@@ -4,7 +4,7 @@
 (define (halve x) (/ x 2))
 (define (double x) (* x 2))
 
-; iterative multiply with log(b) runtime 
+; iterative multiply with O(log(b)) time complexity
 (define (mult a b)
   (define (mult-iter s aa bb)
     (cond ((= bb 0) s)
